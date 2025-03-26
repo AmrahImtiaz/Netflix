@@ -28,6 +28,8 @@ const Home = () => {
     <TitleCards></TitleCards>
     <TitleCards></TitleCards>
     <TitleCards></TitleCards>
+    <TitleCards></TitleCards>
+
     </div>
     </div>
   )
