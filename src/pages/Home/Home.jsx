@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Home.css'
 import Navbar from '../../components/Navbar/Navbar'
 import hero_banner from '../../assets/hero_banner.jpg'
@@ -6,8 +6,10 @@ import herotitle from '../../assets/hero_title.png'
 import play_icon from '../../assets/play_icon.png'
 import info_icon from '../../assets/info_icon.png'
 import TitleCards from '../../components/TitleCards/TitleCards'
+import Footer from '../../components/Footer/Footer'
 
 const Home = () => {
+
   return (
     <div className='home'>
     <Navbar/>
@@ -25,12 +27,11 @@ const Home = () => {
       </div>
     </div>
     <div className="more-cards">
-    <TitleCards></TitleCards>
-    <TitleCards></TitleCards>
-    <TitleCards></TitleCards>
-    <TitleCards></TitleCards>
-
+    <TitleCards title={'Blockbuster Movies'} category={'popular'}/>
+    <TitleCards title={'Upcoming'} category={'upcoming'}/>
+    <TitleCards title={'Top Picks For You'} category={'top_rated'}/>
     </div>
+    <Footer></Footer>
     </div>
   )
 }
